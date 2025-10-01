@@ -1,0 +1,26 @@
+{
+  "name": "pwa-test",
+  "short_name": "pwa-test",
+  "description": "PWA Push Test Application",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#2EC6FE",
+  "theme_color": "#8936FF",
+  "orientation": "any",
+  "dir": "auto",
+  "lang": "ja",
+  "icons": [
+    {
+      "src": "icon512_maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icon512_rounded.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
