@@ -49,6 +49,7 @@ export function useNotificationManager() {
 
   // 通知の購読
   const subscribeToPush = async () => {
+    console.log("🔔 subscribeToPush が呼ばれました")
     try {
       // 通知許可を要求
       const permission = await Notification.requestPermission()

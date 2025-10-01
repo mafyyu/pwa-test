@@ -1,10 +1,8 @@
-// app/page.tsx
-
 "use client"
 
 import { FormEvent, useState } from "react"
 
-import { useNotificationManager } from "@/app/hooks/use-notification-manager"
+import { useNotificationManager } from "./hooks/use-notification-manager"
 
 export default function Page() {
   const [message, setMessage] = useState("")
@@ -69,11 +67,8 @@ export default function Page() {
             <p>プッシュ通知に登録されていません。</p>
             <div className="mt-4">
               <button
-                onClick={() => {
-                  console.log("🖱️ 登録ボタンがクリックされました")
-                  subscribeToPush()
-                }}
-                className="rounded bg-green-500 px-4 py-2 text-white"
+                onClick={subscribeToPush}
+                className="rounded bg-green-500 px-4 py-2"
               >
                 登録
               </button>
