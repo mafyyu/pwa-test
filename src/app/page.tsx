@@ -69,8 +69,11 @@ export default function Page() {
             <p>プッシュ通知に登録されていません。</p>
             <div className="mt-4">
               <button
-                onClick={subscribeToPush}
-                className="rounded bg-green-500 px-4 py-2"
+                onClick={() => {
+                  console.log("🖱️ 登録ボタンがクリックされました")
+                  subscribeToPush()
+                }}
+                className="rounded bg-green-500 px-4 py-2 text-white"
               >
                 登録
               </button>
