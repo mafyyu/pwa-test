@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react"
 
 export function useNotificationManager() {
@@ -60,7 +61,7 @@ export function useNotificationManager() {
       const sub = await registration.pushManager.subscribe({
         userVisibleOnly: true,
         applicationServerKey: urlBase64ToUint8Array(
-          process.env.VAPID_PUBLIC_KEY!
+          process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY!
         ),
       })
       setSubscription(sub)
